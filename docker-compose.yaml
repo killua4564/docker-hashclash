@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  hashclash:
+    build: .
+    image: killua4564/hashclash:latest
+    container_name: hashclash
+    volumes:
+      - ./:/home/hashclash
+    # working_dir: /home/hashclash/cpc_workdir
+    # command: ../scripts/cpc.sh prefix1.bin prefix2.bin
+    working_dir: /home/hashclash/ipc_workdir
+    command: ../scripts/poc_no.sh prefix.txt

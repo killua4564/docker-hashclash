@@ -1,3 +1,18 @@
+# Project HashClash - MD5 & SHA-1 cryptanalytic toolbox - Dockerize
+
+## DockerHub
+- `docker pull killua4564/hashclash`
+
+## Usage
+- `docker-compose up -d`
+  - **chosen-prefix collisions**
+    - working_dir: `/home/hashclash/cpc_workdir`
+    - command: `../scripts/cpc.sh prefix1.bin prefix2.bin`
+  - **identical-prefix collision**
+    - working_dir: `/home/hashclash/ipc_workdir`
+    - command: `../scripts/poc_no.sh prefix.txt`
+
+
 # Project HashClash - MD5 & SHA-1 cryptanalytic toolbox
 
 [![C/C++ CI](https://github.com/cr-marcstevens/hashclash/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/cr-marcstevens/hashclash/actions/workflows/c-cpp.yml)
