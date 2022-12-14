@@ -27,3 +27,14 @@
 *.exe
 *.out
 *.app
+
+cpc_workdir/*.cfg*
+cpc_workdir/*.log
+cpc_workdir/data
+cpc_workdir/workdir*
+cpc_workdir/file*.bin
+
+ipc_workdir/data
+ipc_workdir/logs
+ipc_workdir/upper*
+ipc_workdir/collision*.bin
